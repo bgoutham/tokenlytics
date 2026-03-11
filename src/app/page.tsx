@@ -97,7 +97,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden">
+      <section aria-label="Hero" className="relative overflow-hidden">
         {/* Background glow */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] bg-accent/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -148,7 +148,7 @@ export default function Home() {
       </section>
 
       {/* Features */}
-      <section id="features" className="py-20 md:py-28">
+      <section id="features" aria-label="Features" className="py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Everything you need to manage token costs</h2>
@@ -173,7 +173,7 @@ export default function Home() {
       </section>
 
       {/* Lifecycle Phases */}
-      <section id="lifecycle" className="py-20 md:py-28 bg-surface">
+      <section id="lifecycle" aria-label="Token Cost Lifecycle" className="py-20 md:py-28 bg-surface">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">The Token Cost Lifecycle</h2>
@@ -219,7 +219,7 @@ export default function Home() {
       </section>
 
       {/* Social Proof */}
-      <section className="py-20 md:py-28">
+      <section aria-label="Testimonials" className="py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted by AI-forward teams</h2>
@@ -263,7 +263,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section id="cta" className="py-20 md:py-28 bg-surface">
+      <section id="cta" aria-label="Get early access" className="py-20 md:py-28 bg-surface">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Ready to optimize your AI spend?

@@ -2,8 +2,18 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing — Tokenlytics.ai",
-  description: "Simple, transparent pricing for AI token cost management.",
+  title: "Pricing — AI Token Cost Management Plans",
+  description:
+    "Simple, transparent pricing for AI token cost management. Start free with 1M tokens/month. Pro plans from $499/mo for model rightsizing, budget alerts, and cost allocation.",
+  alternates: {
+    canonical: "https://tokenlytics.ai/pricing",
+  },
+  openGraph: {
+    title: "Pricing — Tokenlytics.ai",
+    description:
+      "Start free. Scale to Pro at $499/mo. Enterprise custom pricing for unlimited token tracking and full governance.",
+    url: "https://tokenlytics.ai/pricing",
+  },
 };
 
 const plans = [

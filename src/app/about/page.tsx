@@ -2,8 +2,18 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About — Tokenlytics.ai",
-  description: "The team and mission behind Tokenlytics — helping companies optimize their AI token spend.",
+  title: "About — Our Mission to Optimize AI Token Costs",
+  description:
+    "Tokenlytics was founded to make AI costs visible and optimizable. Learn about our mission, values, and how we help companies move from reactive spending to proactive AI cost optimization.",
+  alternates: {
+    canonical: "https://tokenlytics.ai/about",
+  },
+  openGraph: {
+    title: "About Tokenlytics — Making AI Costs Visible and Optimizable",
+    description:
+      "Learn about Tokenlytics' mission to help companies optimize their AI token spend through the Inform, Optimize, Operate lifecycle.",
+    url: "https://tokenlytics.ai/about",
+  },
 };
 
 const values = [
@@ -25,12 +35,6 @@ const values = [
   },
 ];
 
-const team = [
-  { name: "Alex Rivera", role: "CEO & Co-founder", bio: "Former cloud cost optimization lead at a major cloud provider. Saw the same cost visibility gap emerging in AI." },
-  { name: "Jordan Kim", role: "CTO & Co-founder", bio: "Built billing infrastructure at scale. Passionate about giving engineering teams the data they need." },
-  { name: "Maya Thompson", role: "Head of Product", bio: "Product leader with deep experience in developer tools and observability platforms." },
-  { name: "Raj Gupta", role: "Head of Engineering", bio: "Infrastructure engineer who has scaled real-time data pipelines processing billions of events." },
-];
 
 export default function AboutPage() {
   return (
@@ -71,31 +75,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team */}
-      <section id="team" className="py-20 md:py-28">
-        <div className="mx-auto max-w-7xl px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Meet the team</h2>
-            <p className="text-muted text-lg">Experienced builders from cloud infrastructure, developer tools, and fintech.</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {team.map((member) => (
-              <div key={member.name} className="card-hover rounded-xl border border-border bg-surface p-6 text-center">
-                <div className="w-16 h-16 rounded-full bg-accent/10 border border-accent/30 mx-auto mb-4 flex items-center justify-center text-accent font-bold text-lg">
-                  {member.name.split(" ").map((n) => n[0]).join("")}
-                </div>
-                <h3 className="font-semibold text-sm">{member.name}</h3>
-                <p className="text-accent text-xs mb-3">{member.role}</p>
-                <p className="text-muted text-xs leading-relaxed">{member.bio}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Careers */}
-      <section id="careers" className="py-20 md:py-28 bg-surface">
+      <section id="careers" className="py-20 md:py-28">
         <div className="mx-auto max-w-3xl px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Join us</h2>
           <p className="text-muted text-lg mb-8">
