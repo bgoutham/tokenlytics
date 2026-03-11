@@ -11,7 +11,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold">
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
-            <rect width="28" height="28" rx="6" fill="#6366f1" />
+            <rect width="28" height="28" rx="6" fill="#4f46e5" />
             <path d="M8 14h4l2-6 4 12 2-6h4" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
           tokenlytics<span className="text-accent">.ai</span>

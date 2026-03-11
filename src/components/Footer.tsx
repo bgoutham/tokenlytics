@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2 text-lg font-bold mb-3">
               <svg width="24" height="24" viewBox="0 0 28 28" fill="none">
-                <rect width="28" height="28" rx="6" fill="#6366f1" />
+                <rect width="28" height="28" rx="6" fill="#4f46e5" />
                 <path d="M8 14h4l2-6 4 12 2-6h4" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
               </svg>
               tokenlytics<span className="text-accent">.ai</span>

@@ -1,5 +1,7 @@
 import Link from "next/link";
 import CtaForm from "@/components/CtaForm";
+import TokenSpendChart from "@/components/TokenSpendChart";
+import OptimizationChart from "@/components/OptimizationChart";
 
 const features = [
   {
@@ -147,6 +149,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Charts — The Problem & The Solution */}
+      <section aria-label="Token spend visibility" className="py-20 md:py-28 bg-surface">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              See the problem. Then solve it.
+            </h2>
+            <p className="text-muted text-lg max-w-2xl mx-auto">
+              Most teams don&apos;t realize how fast AI costs are growing. Tokenlytics makes it visible — then helps you bring it under control.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <TokenSpendChart />
+            <OptimizationChart />
+          </div>
+        </div>
+      </section>
+
       {/* Features */}
       <section id="features" aria-label="Features" className="py-20 md:py-28">
         <div className="mx-auto max-w-7xl px-6">
@@ -204,7 +225,7 @@ export default function Home() {
                   <ul className="space-y-2">
                     {phase.items.map((item) => (
                       <li key={item} className="flex items-center gap-2 text-sm">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#6366f1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4f46e5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                           <path d="M9 12l2 2 4-4" />
                         </svg>
                         {item}

@@ -113,7 +113,7 @@ export default function PricingPage() {
                         height="18"
                         viewBox="0 0 24 24"
                         fill="none"
-                        stroke="#6366f1"
+                        stroke="#4f46e5"
                         strokeWidth="2"
                         strokeLinecap="round"
                         strokeLinejoin="round"

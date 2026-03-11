@@ -1,14 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --accent: #6366f1;
-  --accent-light: #818cf8;
-  --surface: #141414;
-  --surface-light: #1e1e1e;
-  --border: #262626;
-  --muted: #a3a3a3;
+  --background: #ffffff;
+  --foreground: #111827;
+  --accent: #4f46e5;
+  --accent-light: #6366f1;
+  --surface: #f8fafc;
+  --surface-light: #f1f5f9;
+  --border: #e2e8f0;
+  --muted: #64748b;
 }
 
 @theme inline {
@@ -37,7 +37,7 @@ html {
 
 /* Gradient text utility */
 .gradient-text {
-  background: linear-gradient(135deg, #6366f1, #a78bfa, #6366f1);
+  background: linear-gradient(135deg, #4f46e5, #7c3aed, #4f46e5);
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -46,7 +46,7 @@ html {
 
 /* Glow effect */
 .glow {
-  box-shadow: 0 0 40px rgba(99, 102, 241, 0.15);
+  box-shadow: 0 0 40px rgba(79, 70, 229, 0.12);
 }
 
 /* Card hover effect */
@@ -55,5 +55,5 @@ html {
 }
 .card-hover:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(99, 102, 241, 0.1);
+  box-shadow: 0 8px 30px rgba(79, 70, 229, 0.08);
 }
